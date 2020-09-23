@@ -130,7 +130,16 @@ export class LayerManager {
      * @returns {CityObject | undefined}
      */
     pickCityObject(event) {
-        if (event.target.nodeName.toUpperCase() === 'CANVAS') {
+        let target = event.target; 
+        // The release https://github.com/iTowns/itowns/releases/tag/v2.24.2
+        // introduced a label <div> overlapping the 3D canvas for displaying 2D 
+        // labels. The picking event returns this div instead of the canvas
+        // (due to the Z index). Therefore we need to look for the 
+        // canvas among the siblings.  
+        while (target.nodeName.toUpperCase() !== 'CANVAS' && target != undefined) {
+            target = target.nextSibling;
+        }
+        if(target.nodeName.toUpperCase() === 'CANVAS' && !!target){
             this.update3DTiles();
             // Get the intersecting objects where our mouse pointer is
             let intersections = [];
