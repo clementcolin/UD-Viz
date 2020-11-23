@@ -18,8 +18,8 @@ export class IfcAttributeWindow extends Window {
         this.oid = undefined;
         this.serialiazerOid = undefined;
         this.downloadToken = undefined;
-        this.serverUrl = "http://localhost:8082/json";
-        this.serverGetUrl = "http://localhost:8082/download";
+        this.serverUrl = "http://localhost:8888/BIMserver/json";
+        this.serverGetUrl = "http://localhost:8888/BIMserver/download";
 
         this.jsonObject = undefined;
 
@@ -75,7 +75,7 @@ export class IfcAttributeWindow extends Window {
                   "interface": "AuthInterface", 
                   "method": "login", 
                   "parameters": {
-                    "username": "clement.colin69@gmail.com",
+                    "username": "admin@admin.fr",
                     "password": "admin"
                   }
                 }
