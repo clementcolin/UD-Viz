@@ -161,7 +161,7 @@
     },
     "limonest_building":{
       "id":"3d-tiles-layer-building",
-      "url":"http://rict2.liris.cnrs.fr/DataStore/limonest_tiles/tileset.json",
+      "url":"http://localhost:8003/tilesets/ifc_tileset/tileset.json",
       "color": "0xFFFFFF",
       "initTilesManager": "true"
     },

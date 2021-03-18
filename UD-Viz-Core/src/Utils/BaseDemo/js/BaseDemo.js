@@ -1,7 +1,6 @@
 import { ModuleView } from '../../ModuleView/ModuleView.js';
 import { TilesManager } from '../../3DTiles/TilesManager.js';
 import { LayerManager } from '../../LayerManager/LayerManager.js';
-
 import { $3DTemporalBatchTable } from '../../../Modules/Temporal/Model/3DTemporalBatchTable.js';
 import { $3DTemporalBoundingVolume } from '../../../Modules/Temporal/Model/3DTemporalBoundingVolume.js';
 import { $3DTemporalTileset } from '../../../Modules/Temporal/Model/3DTemporalTileset.js';
@@ -286,7 +285,7 @@ export class BaseDemo {
         this.authService = authService;
         this.updateAuthentication();
     }
-
+    
     /**
      * This method should be called when the authentication state changes
      *  (ie. a user log in / out), or when a module is added. It has two

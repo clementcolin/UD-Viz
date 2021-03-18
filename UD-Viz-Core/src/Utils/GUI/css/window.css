@@ -4,7 +4,7 @@
     left: 100px;
     min-width: 200px;
     min-height: 200px;
-    width: 250px;
+    width: 350px;
     padding: 0;
     resize: both;
     overflow: hidden;
@@ -51,7 +51,7 @@
 .window-content {
     background-color: rgba(30,30,30,0.9);
     border: 5px solid rgba(30,30,30,0.1);
-    overflow-y: auto;
+    overflow-y: scroll;
     margin: 0;
 }
 
